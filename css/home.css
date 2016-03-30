@@ -1,8 +1,17 @@
+@font-face {
+    font-family: FuturaBold;
+    src: url("../fonts/FuturaLT-Bold.ttf");
+}
+@font-face {
+    font-family: FuturaCondensed;
+    src: url("../fonts/FuturaLT-Condensed.ttf");
+}
+
 body{
   margin: 0;
   display: block;
   font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
-  background-image:url("../images/background.png");
+  background-image:url("../images/home-background.png");
   background-size: 100%;
 }
 /* styling for hamburger mobile navigation */
@@ -50,10 +59,10 @@ body{
 /* styling for web menu bar */
 .menu-bar{
   display:inline-block;
+  font-family:FuturaBold;
   width:100%;
   background-color:#000;
   color:#e8ba92;
-  font-weight:900;
 }
 .menu-bar ul li:hover, .menu-bar ul li:focus, .menu-bar ul li:active {
   color:#fff;
@@ -93,8 +102,10 @@ body{
 }
 /* styling for PFOS logo */
 .title{
+  position:relative;
   display:inline-block;
   width:35%;
+  z-index:1;
 }
 .title img{
   width:100%;
@@ -104,23 +115,24 @@ body{
   display:inline-block;
   top:50px;
   right:0;
-  width:67%;
+  width:74%;
 }
 .group-bg{
   position:absolute;
-  top:50px;
   right:0;
-  width:85%;
-  z-index:-1;
+  width:100%;
+  z-index:-1
 }
 .group-photo{
   width:100%;
 }
 /* styling for guest performances*/
 .guest-artist-container{
-  padding: 0 4%;
+  font-family: FuturaCondensed;
+  letter-spacing:1px;
+  padding: 0 2%;
   display:block;
-  width:25%;
+  width:20%;
   text-align:center;
 }
 /* image size 600x400 */
@@ -133,13 +145,13 @@ body{
 .guest-artist-ml{
   display:inline-block;
   width:46%;
-  padding-right:3%;
+  padding-right:2%;
   margin:10px 0;
 }
 .guest-artist-mr{
   display:inline-block;
   width:46%;
-  padding-left:3%;
+  padding-left:2%;
   margin:10px 0;
 }
 
@@ -150,11 +162,6 @@ body{
   margin: 0;
   padding:10px;
   color:#E2DBD2;
-  transform : scale(1,1.2);
-  -webkit-transform:scale(1,1.2); /* Safari and Chrome */
-  -moz-transform:scale(1,1.2); /* Firefox */
-  -ms-transform:scale(1,1.2); /* IE 9+ */
-  -o-transform:scale(1,1.2);
 }
 .guest-artist-image{
   border:2px solid #AB5627;
@@ -164,23 +171,17 @@ body{
   display:inline-block;
   height:3vw;
   text-align:center;
-  font-size:1vw;
-  font-weight:300;
-  margin:0;
-  padding:1px;
-  color:#E2DBD2;
 }
 .guest-artist-name p{
   display:inline-block;
   text-align:center;
-  font-size:1vw;
-  font-weight:300;
+  font-size:1.2vw;
   margin:0;
-  padding:1vw 5px;
+  padding:0.5vw 0;
   color:#efefef;
 }
 .playbutton{
-  height:3vw;
+  height:2vw;
   vertical-align:middle;
 }
 .pfos-story-container{
@@ -188,20 +189,20 @@ body{
   padding:20px 5vw;
 }
 .story{
+  font-family:FuturaCondensed;
+  letter-spacing:1px;
   text-align:center;
-  font-size:2vw;
+  font-size:2.4vw;
   line-height:150%;
   font-weight:500;
   color:#F0C394;
-  transform : scale(1,1.1);
-  -webkit-transform:scale(1,1.1); /* Safari and Chrome */
-  -moz-transform:scale(1,1.1); /* Firefox */
-  -ms-transform:scale(1,1.1); /* IE 9+ */
-  -o-transform:scale(1,1.1);
 }
 .story p{
   margin: 0;
   padding: 0;
+}
+#psalm-story {
+  padding: 0 14%;
 }
 .buttons{
   text-align:center;
@@ -241,8 +242,8 @@ body{
   padding:0;
   line-height:200%;
 }
-.pfos-button:hover, 
-.pfos-button:focus, 
+.pfos-button:hover,
+.pfos-button:focus,
 .pfos-button:active {
   background-color:#774D25;
 }
