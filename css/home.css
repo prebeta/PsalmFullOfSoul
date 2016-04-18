@@ -11,7 +11,7 @@ body{
   margin: 0;
   display: block;
   font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
-  background-image:url("../images/home-background.png");
+  background-image:url("../images/home/background.png");
   background-size: 100%;
 }
 /* styling for hamburger mobile navigation */
@@ -70,7 +70,7 @@ body{
 .web-nav{
   display:inline-block;
   list-style-type:none;
-  font-size:22px;
+  font-size:20px;
   margin:10px;
   padding:0;
 }
@@ -202,7 +202,7 @@ body{
   padding: 0;
 }
 #psalm-story {
-  padding: 0 14%;
+  padding: 0 10%;
 }
 .buttons{
   text-align:center;
@@ -219,15 +219,17 @@ body{
   border-bottom: 0.75vw solid transparent;
 }
 .pfos-button.right{
+  margin-right:10%;
   float:right;
 }
 .pfos-button.left{
+  margin-left:10%;
   float:left;
 }
 .pfos-button{
   border:4px solid #D4BEAA;
-  border-radius:16px;
-  width: 40%;
+  border-radius:10px;
+  width: 35%;
   display:inline-block;
   background-color:#5F4D39;
   padding:0;
@@ -278,7 +280,7 @@ body{
   }
   .pfos-button{
     border:3px solid #D4BEAA;
-    border-radius:10px;
+    border-radius:7px;
   }
 }
 /* mobile phone screen size */
@@ -303,15 +305,19 @@ body{
   .story{
     font-size:3vw;
   }
+  .buttons{
+    margin-top:20px;
+    padding:5px;
+  }
   .pfos-button{
     border:2px solid #D4BEAA;
-    border-radius: 8px;
+    border-radius: 5px;
+    width:35%;
   }
   .pfos-button p{
     font-size:2.5vw;
   }
   .play-icon{
-    margin-top:5px;
     border-top: 1.25vw solid transparent;
     border-left: 2.5vw solid white;
     border-bottom: 1.25vw solid transparent;
@@ -328,10 +334,6 @@ body{
   }
   .playbutton{
     height:6vw;
-  }
-  .buttons{
-    margin-top:5px;
-    padding:5px;
   }
 }
 
