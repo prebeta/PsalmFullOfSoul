@@ -15,6 +15,13 @@
           <li>HOME</li>
           <li>ABOUT</li>
           <li>GUEST ARTISTS</li>
+            <ul class="mobile-guest-artist-nav">
+                <li>Ramón Tasat</li>
+                <li>Lena Seikaly</li>
+                <li>Greg Boyer</li>
+                <li>Natasha Hirschhorn</li>
+                <li>The Blind Boys of Alabama</li>
+            </ul>
           <li>MUSIC</li>
           <li>CONTACT</li>
         </ul>
@@ -22,7 +29,17 @@
       <ul class="web-nav">
         <li>HOME</li>
         <li>ABOUT</li>
-        <li>GUEST ARTISTS</li>
+        <li>
+          <label class="web-nav-ga" for="guest-artist-toggle">GUEST ARTISTS</label>
+          <input type="checkbox" id="guest-artist-toggle"/>
+          <ul class="web-guest-artist-nav">
+              <li>Ramón Tasat</li>
+              <li>Lena Seikaly</li>
+              <li>Greg Boyer</li>
+              <li>Natasha Hirschhorn</li>
+              <li>The Blind Boys of Alabama</li>
+          </ul>
+        </li>
         <li>MUSIC</li>
         <li>CONTACT</li>
       </ul>
@@ -38,63 +55,67 @@
         </a>
       </div>
     </div>
-    <div class="title">
-      <img src="images/pfos-title.png"/>
-    </div>
-    <img class="group-bg" src="images/home/bg-image.png"/>
-    <div class="pfos-info">
-      <img class="group-photo" src="images/home/group-photo.png"/>
-      <div class="pfos-story-container">
-        <div class="story">
-          <img src="images/home/brandingtext.png"/>
-        </div>
-        <div class="buttons">
-          <div class="pfos-button left">
-            <img src="images/home/music-btn.png"/>
-            <!--<div class="play-icon"></div>
-            <p>THE MUSIC</p>-->
+    <div class="content-container">
+      <div class="title">
+        <img src="images/pfos-title.png"/>
+      </div>
+      <img class="group-bg" src="images/home/bg-image.png"/>
+      <div class="pfos-info">
+        <img class="group-photo" src="images/home/group-photo.png"/>
+        <div class="pfos-story-container">
+          <div class="story">
+            <img src="images/home/brandingtext.png"/>
           </div>
-          <div class="pfos-button right">
-            <img src="images/home/behind-btn.png"/>
-            <!--<div class="play-icon"></div>
-            <p>BEHIND THE SCENES</p>-->
+          <div class="buttons">
+            <div class="pfos-button left">
+              <img src="images/home/music-btn.png"/>
+            </div>
+            <div class="pfos-button right">
+              <img src="images/home/behind-btn.png"/>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="guest-artist-container">
-      <h4 class="guest-header">Guests performances by</h4>
-      <div class="guest-artist-l">
-        <img class="guest-artist-image" src="images/home/bboa.jpg">
-        <div class="guest-artist-name">
-          <img class="playbutton" src="images/playbutton.png">
-          <p>The Blind Boys of Alabama</p>
+      <div class="guest-artist-container">
+        <h4 class="guest-header">Guest performances by</h4>
+        <div class="guest-artist-l">
+          <img class="guest-artist-image" src="images/home/bboa.jpg">
+          <div class="guest-artist-name">
+            <p>
+              <img class="playbutton" src="images/playbutton.png">
+              The Blind Boys of Alabama
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="guest-artist-ml">
-        <img class="guest-artist-image" src="images/home/greg.jpg">
-        <div class="guest-artist-name">
-          <img class="playbutton" src="images/playbutton.png">
-          <p>Greg Boyer</p>
+        <div class="guest-artist-ml">
+          <img class="guest-artist-image" src="images/home/greg.jpg">
+          <div class="guest-artist-name">
+            <p>
+              <img class="playbutton" src="images/playbutton.png">
+              Greg Boyer
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="guest-artist-mr">
-        <img class="guest-artist-image" src="images/home/natasha.jpg">
-        <div class="guest-artist-name">
-          <p>Natasha Hirschhorn</p>
+        <div class="guest-artist-mr">
+          <img class="guest-artist-image" src="images/home/natasha.jpg">
+          <div class="guest-artist-name">
+            <p>Cantor Hirschhorn</p>
+          </div>
         </div>
-      </div>
-      <div class="guest-artist-ml">
-        <img class="guest-artist-image" src="images/home/lena.jpg">
-        <div class="guest-artist-name">
-          <p>Lena Seikaly</p>
+        <div class="guest-artist-ml">
+          <img class="guest-artist-image" src="images/home/lena.jpg">
+          <div class="guest-artist-name">
+            <p>Lena Seikaly</p>
+          </div>
         </div>
-      </div>
-      <div class="guest-artist-mr">
-        <img class="guest-artist-image" src="images/home/ramon.jpg">
-        <div class="guest-artist-name">
-          <img class="playbutton" src="images/playbutton.png">
-          <p>Ramón Tasat</p>
+        <div class="guest-artist-mr">
+          <img class="guest-artist-image" src="images/home/ramon.jpg">
+          <div class="guest-artist-name">
+            <p>
+              <img class="playbutton" src="images/playbutton.png">
+              Cantor Tasat
+            </p>
+          </div>
         </div>
       </div>
     </div>

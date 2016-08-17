@@ -25,11 +25,8 @@ body{
   font-size:15px;
 }
 .mobile-menu{
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  -webkit-padding-start: 0;
+  margin:0;
+  padding:0;
   display:none;
   background-color:black;
   position:absolute;
@@ -50,6 +47,10 @@ body{
   margin:10px 0;
   cursor:pointer;
 }
+.mobile-guest-artist-nav{
+  margin:0;
+  padding:0 10px;
+}
 .menu-ham{
   padding:10px;
   cursor:pointer;
@@ -60,16 +61,51 @@ body{
 #menu-toggle:checked + .mobile-menu {
   display: block;
 }
+
+.web-guest-artist-nav{
+  margin:0;
+  padding:0;
+  display: none;
+  background-color:black;
+  position:absolute;
+  list-style-type:none;
+  margin-left:-10px
+  margin-top: 5px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  font-size:16px;
+  width:250px;
+  color:#e8ba92;
+}
+
+.web-guest-artist-nav li{
+  display:block;
+  padding:4px;
+  cursor:pointer;
+}
+
+#guest-artist-toggle{
+  display:none;
+}
+#guest-artist-toggle:checked + .web-guest-artist-nav{
+  display:block;
+}
 /* styling for web menu bar */
 .menu-bar{
   display:inline-block;
+  position:relative;
+  z-index:10;
   font-family:FuturaBold;
   width:100%;
   background-color:#000;
   color:#e8ba92;
 }
-.menu-bar ul li:hover, .menu-bar ul li:focus, .menu-bar ul li:active {
+.menu-bar ul > li:hover, .menu-bar ul > li:focus, .menu-bar ul > li:active {
   color:#fff;
+}
+.web-nav-ga{
+  cursor:pointer;
 }
 .web-nav{
   display:inline-block;
@@ -78,7 +114,7 @@ body{
   margin:10px;
   padding:0;
 }
-.web-nav li{
+.web-nav > li{
   display:inline-block;
   margin:0 20px;
   cursor:pointer;
@@ -104,9 +140,12 @@ body{
   text-decoration:none;
   cursor:pointer;
 }
+.content-container{
+  margin-left:12%;
+  width:70%;
+}
 /* styling for PFOS logo */
 .title{
-  position:relative;
   display:inline-block;
   width:35%;
   z-index:1;
@@ -118,13 +157,13 @@ body{
   position:absolute;
   display:inline-block;
   top:50px;
-  right:0;
-  width:74%;
+  right:15%;
+  width:52%;
 }
 .group-bg{
   position:absolute;
   right:0;
-  width:100%;
+  width:75%;
   z-index:-1
 }
 .group-photo{
@@ -136,27 +175,24 @@ body{
   letter-spacing:1px;
   padding: 0 2%;
   display:block;
-  width:20%;
+  width:25%;
   text-align:center;
 }
 /* image size 600x400 */
 .guest-artist-l{
   display:inline-block;
   width:100%;
-  margin:10px 0;
 }
 /* image size 400x500 */
 .guest-artist-ml{
   display:inline-block;
   width:46%;
   padding-right:2%;
-  margin:10px 0;
 }
 .guest-artist-mr{
   display:inline-block;
   width:46%;
   padding-left:2%;
-  margin:10px 0;
 }
 
 .guest-header{
@@ -164,7 +200,7 @@ body{
   font-size:1.5vw;
   font-weight:700;
   margin: 0;
-  padding:10px;
+  padding: 10px;
   color:#E2DBD2;
 }
 .guest-artist-image{
@@ -173,13 +209,15 @@ body{
 }
 .guest-artist-name{
   display:inline-block;
+  position:relative;
   height:3vw;
   text-align:center;
+  white-space:nowrap;
 }
 .guest-artist-name p{
   display:inline-block;
   text-align:center;
-  font-size:1.2vw;
+  font-size:1vw;
   margin:0;
   padding:0.5vw 0;
   color:#efefef;
@@ -214,7 +252,7 @@ body{
 .buttons{
   font-family:FuturaLight;
   text-align:center;
-  margin-top:20px;
+  margin-top:10px;
   padding:40px;
 }
 .play-icon{
@@ -262,6 +300,8 @@ body{
     display:inline-block;
   }
   .pfos-info{
+    right:0;
+    width:74%;
     top:34px;
   }
   .icon-bar{
@@ -273,11 +313,20 @@ body{
     height:1.5em;
     width:1.5em;
   }
+  .content-container{
+    margin-left:0;
+    width:90%;
+  }
   .guest-artist-ml{
     padding-right:2%;
+    margin:10px 0;
   }
   .guest-artist-mr{
     padding-left:2%;
+    margin:10px 0;
+  }
+  .guest-artist-name p{
+    font-size:1vw;
   }
   .group-bg{
     top:34px;
@@ -296,6 +345,9 @@ body{
     z-index:100;
     width: 35%;
   }
+  .content-container{
+    width:100%;
+  }
   .pfos-info{
     position:relative;
     display:block;
@@ -310,15 +362,12 @@ body{
     font-size:3vw;
   }
   .buttons{
-    margin-top:20px;
     padding:5px;
   }
   .pfos-button{
     border:2px solid #D4BEAA;
     border-radius: 5px;
-  }
-  .pfos-button p{
-    font-size:2.4vw;
+    height:5vw;
   }
   .play-icon{
     border-top: 1.2vw solid transparent;
@@ -326,17 +375,21 @@ body{
     border-bottom: 1.2vw solid transparent;
   }
   .guest-header{
+    padding-top:10%;
     font-size:3vw;
   }
   .guest-artist-name{
     height:6vw;
-    font-size:4vw;
   }
   .guest-artist-name p{
     font-size:4vw;
   }
+  .ga-overflow{
+    left:0;
+  }
   .playbutton{
-    height:6vw;
+    height:5vw;
+    padding: 0 0.5vw;
   }
 }
 

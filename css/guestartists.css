@@ -21,11 +21,8 @@ body{
   font-size:15px;
 }
 .mobile-menu{
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  -webkit-padding-start: 0;
+  margin:0;
+  padding:0;
   display:none;
   background-color:black;
   position:absolute;
@@ -46,6 +43,10 @@ body{
   margin:10px 0;
   cursor:pointer;
 }
+.mobile-guest-artist-nav{
+  margin:0;
+  padding:0 10px;
+}
 .menu-ham{
   padding:10px;
   cursor:pointer;
@@ -56,16 +57,51 @@ body{
 #menu-toggle:checked + .mobile-menu {
   display: block;
 }
+
+.web-guest-artist-nav{
+  margin:0;
+  padding:0;
+  display: none;
+  background-color:black;
+  position:absolute;
+  list-style-type:none;
+  margin-left:-10px
+  margin-top: 5px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  font-size:16px;
+  width:250px;
+  color:#e8ba92;
+}
+
+.web-guest-artist-nav li{
+  display:block;
+  padding:4px;
+  cursor:pointer;
+}
+
+#guest-artist-toggle{
+  display:none;
+}
+#guest-artist-toggle:checked + .web-guest-artist-nav{
+  display:block;
+}
 /* styling for web menu bar */
 .menu-bar{
   display:inline-block;
+  position:relative;
+  z-index:10;
   font-family:FuturaBold;
   width:100%;
   background-color:#000;
   color:#e8ba92;
 }
-.menu-bar ul li:hover, .menu-bar ul li:focus, .menu-bar ul li:active {
+.menu-bar ul > li:hover, .menu-bar ul > li:focus, .menu-bar ul > li:active {
   color:#fff;
+}
+.web-nav-ga{
+  cursor:pointer;
 }
 .web-nav{
   display:inline-block;
@@ -74,7 +110,7 @@ body{
   margin:10px;
   padding:0;
 }
-.web-nav li{
+.web-nav > li{
   display:inline-block;
   margin:0 20px;
   cursor:pointer;
@@ -100,6 +136,7 @@ body{
   text-decoration:none;
   cursor:pointer;
 }
+/* End of header styling */
 .header{
   position:relative;
   background-image:url("../images/guestartists/background.png");
