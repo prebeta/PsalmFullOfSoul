@@ -193,190 +193,165 @@ body{
   margin:0;
   padding:5px;
 }
-/* End of general page header */
-.ga-container{
-  width:60%;
-  margin-left:20%;
+.music-container{
+  width: 60%;
+  margin-left: 20%;
 }
-.ga-info-panel{
-  display:flex;
+.music-container a{
+  text-decoration: none;
+  color:#FF4900;
 }
-.ga-image{
-  display:inline-block;
-  padding:5%;
-  background-color:#D4C39C;
-  width:35%;
+.music-container a:hover, .music-container a:active {
+  text-decoration:underline;
 }
-.ga-image img{
-  width:100%;
-  border: 10px solid white;
+.music-panel{
+  display: flex;
+  background-color: #F0E9D7;
+}
+.music-partial{
+  display: inline-block;
+  padding: 2% 5%;
+  width: 50%;
+}
+.music-partial p{
+  color: #59441E;
+  padding: 10px 0;
+  margin: 0;
+}
+.album-cover{
+  width: 100%;
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
   box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
 }
-.ga-img-full{
-  width:100%;
+.dark-panel{
+  background-color: #E4D8C4;
 }
-.ga-img-full img{
-  width:100%;
+.darker-panel{
+  background-color: #D4C39C;
 }
-.ga-banner{
-  width:100%;
-  max-height:500px;
-  overflow:hidden;
-}
-.ga-banner img{
-  width:100%;
-}
-.ga-desc-container{
-  display:inline-block;
-  padding:2% 5%;
-  width:65%;
-}
-.ga-desc-full{
-  width:100%;
-}
-.ga-name{
-  display:inline-block;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: bold;
-  color: #000;
-  margin:10px 0;
-  width:100%;
-  text-align:center;
-}
-.ga-description{
+.full-panel{
   display:block;
-  text-align:left;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 16px;
-  line-height: 30px;
+}
+.album-title{
+  padding: 0;
+  margin: 0;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  font-size: 30px;
+}
+.booklet-container{
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  color: #79643E;
+}
+.booklet-container img{
+  width: 100%;
+}
+.booklet-container h2{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.song-credits{
+  display:flex;
+  margin-left: 16px;
+}
+.song-credits p{
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.song-credit-name{
+  flex-shrink: 0;
+  margin: 0 2px;
+}
+.song-credit-list{
+  margin: 0 2px;
+}
+.purchase{
+  padding: 5px 0;
+  margin: 0;
+  color: #59441E;
+}
+.purchase p{
+  padding: 2px 0;
+  margin: 0;
+  font-size: 12px;
+}
+.purchase h2{
+  padding: 2px 0;
+  margin: 0;
+  font-size: 14px;
+}
+.soundclip{
+  padding: 0;
+  margin: 0;
   font-weight: 400;
   color: #59441E;
-  margin:0;
 }
-.ga-description a{
-  text-decoration: none;
-  color:#FF4900;
+.mixing-credits{
+  width: 90%;
+  padding: 2% 5%;
+  text-align: center;
 }
-.ga-description a:hover{
-  text-decoration:underline;
+.songbook-title{
+  width: 90%;
+  padding: 2% 5%;
+  margin: 0;
+  text-align: center;
 }
-.ga-desc-link{
-  display:block;
-  text-align:left;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: bold;
-  margin:10px;
-  /*width:100%;*/
-  text-align:center;
+.songbook-info{
+  width: 90%;
+  padding: 1% 5%;
+  margin: 0;
+  text-align: center;
 }
-.ga-sample-panel{
-  display:flex;
-}
-.ga-sample-image{
-  display:inline-block;
-  padding:5%;
-  background-color:#D4C39C;
-  width:35%;
-}
-.ga-sample-image img{
-  width:100%;
-}
-.ga-sample-video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-.ga-sample-video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+.preorder{
   width: 100%;
-  height: 100%;
-}
-.ga-sample-img-title{
-  width:100%;
-  display:inline-block;
-  text-align:center;
-  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
   font-size: 14px;
-  line-height: 18px;
 }
-.ga-sample-description{
-  display:inline-block;
-  text-align:left;
-  width:65%;
-  padding:5%;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 14px;
-  line-height: 15px;
-  color: #59441E;
+.songbook-container{
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
 }
-.ga-sample-title{
-  margin:14px 0;
-  padding:0;
-  font-size:16px;
-  line-height:20px;
+.songbook-container img{
+  width: 100%;
 }
-.ga-sample-title p{
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 16px;
+.songbook-pages{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
 }
-.ga-credits{
-  display:flex;
-}
-.ga-credits p{
-  margin: 0;
-  padding: 0;
-}
-.ga-credit-name{
-  flex-shrink: 0;
-  margin:2px;
-}
-.ga-credit-list{
-  margin:2px;
-}
-.ga-credit-list a{
-  text-decoration:none;
-  color:#FF4900;
+.songbook-pages img{
+  width: 100%;
+  margin: auto;
 }
 .ezra {
   font-family: Ezra;
   font-size: 18px;
-  line-height: 24px;
 }
 audio{
   width:100%;
   border: 2px solid #003333;
   margin: 5px 0;
 }
-.ga-desc-link a{
-  text-decoration: none;
-  color:#FF4900;
-}
-.ga-desc-link a:hover, .ga-desc-link a:active {
-  text-decoration:underline;
-}
-.purchase {
-  margin: 0;
-  padding: 2px 0;
-  font-size: 14px;
-}
-.purchase a {
-  text-decoration: none;
-  color:#FF4900;
-}
-.purchase a:hover, .ga-desc-link a:active {
-  text-decoration:underline;
+
+@media screen and (max-width: 1300px) {
+  .header{
+    text-align:center;
+  }
+  .header-img{
+    width:20%;
+  }
+  .music-container{
+    width:100%;
+    margin-left:0;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -398,66 +373,23 @@ audio{
     height:1.5em;
     width:1.5em;
   }
-  .header{
-    text-align:center;
-  }
-  .header-img{
-    width:20%;
-  }
-  .ga-container{
-    width:80%;
-    margin-left:10%;
-  }
-  .ga-image img{
-    border: 5px solid white;
-  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .header{
     text-align:center;
   }
   .header-img{
     width:40%;
   }
-  .ga-container{
-    width:90%;
-    margin:5%;
+  .music-container{
+    width:100%;
+    margin: 0;
   }
-  .ga-info-panel{
+  .music-panel{
     display:block;
   }
-  .ga-image{
-    width:80%;
-    padding:10%;
-    background-color:#F0E9D7;
-  }
-  .ga-image img{
-    border: 3px solid white;
-  }
-  .ga-desc-container{
-    width:100%;
-    padding:0;
-  }
-  .ga-sample-panel{
-    display:block;
-    margin-top:5%;
-  }
-  .ga-sample-image{
-    display:inline-block;
-    padding:0;
-    background-color:#F0E9D7;
-    width:100%;
-  }
-  .ga-sample-image img{
-    width:100%;
-  }
-  .ga-sample-description{
-    width:100%;
-    padding:0;
-  }
-  .ga-description{
-    font-size:14px;
-    line-height:20px;
+  .music-partial{
+    width: 90%;
   }
 }

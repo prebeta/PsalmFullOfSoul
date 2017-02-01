@@ -1,15 +1,10 @@
 @font-face {
     font-family: FuturaBold;
-    src: url("../fonts/FuturaLT-Bold.ttf") format('truetype');
+    src: url("../fonts/FuturaLT-Bold.ttf");
 }
 @font-face {
     font-family: FuturaCondensed;
-    src: url("../fonts/FuturaLT-Condensed.ttf") format('truetype');
-}
-@font-face {
-  font-family: Ezra;
-  direction: rtl;
-  src: url('../fonts/ezrasilsr-webfont.ttf') format('truetype');
+    src: url("../fonts/FuturaLT-Condensed.ttf");
 }
 
 body{
@@ -194,191 +189,107 @@ body{
   padding:5px;
 }
 /* End of general page header */
-.ga-container{
+.form-header{
+  width:100%;
+  text-align:center;
+  font-family:kaushan-script;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+  font-style: normal;
+}
+.about-container{
   width:60%;
   margin-left:20%;
 }
-.ga-info-panel{
+.about-video{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  height: 0;
+}
+.about-video iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.about-person-panel{
   display:flex;
 }
-.ga-image{
+.person-image{
   display:inline-block;
-  padding:5%;
-  background-color:#D4C39C;
+  padding:50px;
   width:35%;
+  text-align:center;
 }
-.ga-image img{
-  width:100%;
+.person-image img{
+  margin:10px;
   border: 10px solid white;
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
   box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
 }
-.ga-img-full{
-  width:100%;
-}
-.ga-img-full img{
-  width:100%;
-}
-.ga-banner{
-  width:100%;
-  max-height:500px;
-  overflow:hidden;
-}
-.ga-banner img{
-  width:100%;
-}
-.ga-desc-container{
-  display:inline-block;
-  padding:2% 5%;
-  width:65%;
-}
-.ga-desc-full{
-  width:100%;
-}
-.ga-name{
-  display:inline-block;
+.person-image p{
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: bold;
-  color: #000;
-  margin:10px 0;
-  width:100%;
-  text-align:center;
-}
-.ga-description{
-  display:block;
-  text-align:left;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 15px;
   font-weight: 400;
   color: #59441E;
-  margin:0;
 }
-.ga-description a{
-  text-decoration: none;
-  color:#FF4900;
+.about-img-full{
+  width:80%;
 }
-.ga-description a:hover{
-  text-decoration:underline;
-}
-.ga-desc-link{
-  display:block;
-  text-align:left;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: bold;
-  margin:10px;
-  /*width:100%;*/
-  text-align:center;
-}
-.ga-sample-panel{
-  display:flex;
-}
-.ga-sample-image{
-  display:inline-block;
-  padding:5%;
-  background-color:#D4C39C;
-  width:35%;
-}
-.ga-sample-image img{
-  width:100%;
-}
-.ga-sample-video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-.ga-sample-video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.ga-sample-img-title{
-  width:100%;
-  display:inline-block;
-  text-align:center;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-}
-.ga-sample-description{
+.person-info{
   display:inline-block;
   text-align:left;
   width:65%;
-  padding:5%;
+  padding:2%;
+}
+.person-info h2{
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 14px;
-  line-height: 15px;
-  color: #59441E;
-}
-.ga-sample-title{
-  margin:14px 0;
-  padding:0;
-  font-size:16px;
-  line-height:20px;
-}
-.ga-sample-title p{
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 16px;
-}
-.ga-credits{
-  display:flex;
-}
-.ga-credits p{
-  margin: 0;
-  padding: 0;
-}
-.ga-credit-name{
-  flex-shrink: 0;
-  margin:2px;
-}
-.ga-credit-list{
-  margin:2px;
-}
-.ga-credit-list a{
-  text-decoration:none;
-  color:#FF4900;
-}
-.ezra {
-  font-family: Ezra;
-  font-size: 18px;
+  font-size:18px;
   line-height: 24px;
+  color: #151515;
 }
-audio{
-  width:100%;
-  border: 2px solid #003333;
-  margin: 5px 0;
+.person-info h3{
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:16px;
+  line-height: 20px;
+  color: #151515;
 }
-.ga-desc-link a{
+.person-info p{
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height: 26px;
+  color: #151515;
+}
+.person-info a{
   text-decoration: none;
   color:#FF4900;
 }
-.ga-desc-link a:hover, .ga-desc-link a:active {
+.person-info a:hover, .person-link a:active {
   text-decoration:underline;
 }
-.purchase {
-  margin: 0;
-  padding: 2px 0;
-  font-size: 14px;
+.closing-statement{
+  width:94%;
+  padding:3%;
 }
-.purchase a {
-  text-decoration: none;
-  color:#FF4900;
+.closing-statement p{
+  text-indent:25px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height: 24px;
+  color: #151515;
 }
-.purchase a:hover, .ga-desc-link a:active {
-  text-decoration:underline;
+.closing-title{
+  text-align:center;
+  margin-bottom:0;
 }
-
 @media screen and (max-width: 1000px) {
   .web-nav{
     display:none;
@@ -404,15 +315,17 @@ audio{
   .header-img{
     width:20%;
   }
-  .ga-container{
+  .about-container{
     width:80%;
     margin-left:10%;
   }
-  .ga-image img{
+  .person-image img{
     border: 5px solid white;
   }
+  .jotform-container{
+    width: 100%;
+  }
 }
-
 @media screen and (max-width: 800px) {
   .header{
     text-align:center;
@@ -420,44 +333,43 @@ audio{
   .header-img{
     width:40%;
   }
-  .ga-container{
+  .about-container{
     width:90%;
     margin:5%;
   }
-  .ga-info-panel{
+  .about-person-panel{
     display:block;
+    padding: 10px 0;
   }
-  .ga-image{
-    width:80%;
-    padding:10%;
-    background-color:#F0E9D7;
+  .person-image{
+    width:100%;
+    padding:0;
   }
-  .ga-image img{
+  .person-image img{
     border: 3px solid white;
   }
-  .ga-desc-container{
+  .person-info{
     width:100%;
     padding:0;
   }
-  .ga-sample-panel{
-    display:block;
-    margin-top:5%;
+  .person-info h2{
+    font-size:16px;
   }
-  .ga-sample-image{
-    display:inline-block;
-    padding:0;
-    background-color:#F0E9D7;
-    width:100%;
-  }
-  .ga-sample-image img{
-    width:100%;
-  }
-  .ga-sample-description{
-    width:100%;
-    padding:0;
-  }
-  .ga-description{
+  .person-info h3{
     font-size:14px;
-    line-height:20px;
+  }
+  .person-info p{
+    font-size:14px;
+    line-height: 20px;
+  }
+  .about-img-full{
+    width:60%;
+  }
+  .closing-statement p{
+    font-size:14px;
+    line-height: 20px;
+  }
+  .closing-title{
+    font-size:18px;
   }
 }

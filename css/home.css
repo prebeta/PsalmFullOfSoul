@@ -47,6 +47,14 @@ body{
   margin:10px 0;
   cursor:pointer;
 }
+.mobile-menu li a{
+  color:#e8ba92;
+  list-style-type:none;
+  text-decoration:none;
+}
+.mobile-menu li a:hover{
+  color:#fff;
+}
 .mobile-guest-artist-nav{
   margin:0;
   padding:0 10px;
@@ -78,11 +86,18 @@ body{
   width:250px;
   color:#e8ba92;
 }
-
 .web-guest-artist-nav li{
   display:block;
   padding:4px;
   cursor:pointer;
+}
+.web-guest-artist-nav li a{
+  color:#e8ba92;
+  list-style-type:none;
+  text-decoration:none;
+}
+.web-guest-artist-nav li a:hover{
+  color:#fff;
 }
 
 #guest-artist-toggle{
@@ -123,6 +138,17 @@ body{
   -moz-transform:scale(1.1,1); /* Firefox */
   -ms-transform:scale(1.1,1); /* IE 9+ */
   -o-transform:scale(1.1,1);
+}
+.web-nav > li:hover{
+  color:#fff
+}
+.web-nav li a{
+  color:#e8ba92;
+  list-style-type:none;
+  text-decoration:none;
+}
+.web-nav li a:hover{
+  color:#fff;
 }
 /* styling for icon bar (twitter, youtube, facebook) */
 .icon-bar{
@@ -217,13 +243,17 @@ body{
 .guest-artist-name p{
   display:inline-block;
   text-align:center;
-  font-size:1vw;
+  font-size:1.2vw;
   margin:0;
   padding:0.5vw 0;
   color:#efefef;
 }
+.guest-artist-name a{
+  text-decoration: none;
+  color: #efefef;
+}
 .playbutton{
-  height:2vw;
+  height:1.8vw;
   vertical-align:middle;
 }
 .pfos-story-container{
@@ -368,6 +398,7 @@ body{
     border:2px solid #D4BEAA;
     border-radius: 5px;
     height:5vw;
+    padding-bottom:3px;
   }
   .play-icon{
     border-top: 1.2vw solid transparent;
@@ -376,7 +407,7 @@ body{
   }
   .guest-header{
     padding-top:10%;
-    font-size:3vw;
+    font-size:5vw;
   }
   .guest-artist-name{
     height:6vw;
