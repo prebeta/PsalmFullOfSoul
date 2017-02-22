@@ -297,6 +297,24 @@ body{
   padding: 2% 5%;
   text-align: center;
 }
+.songbook-panel{
+  display:flex;
+  width:100%;
+  margin-top: 10%;
+}
+.songbook-panel-img{
+  width:20%;
+  margin:2%;
+  display:inline-block;
+}
+.songbook-panel-img img{
+  width:100%;
+}
+.songbook-panel-info{
+  display:inline-block;
+  width:70%;
+  margin:2%;
+}
 .songbook-title{
   width: 90%;
   padding: 2% 5%;
