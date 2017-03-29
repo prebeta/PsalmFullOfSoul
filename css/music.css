@@ -218,6 +218,10 @@ body{
   padding: 10px 0;
   margin: 0;
 }
+.music-partial p img{
+  width: 70%;
+  margin-left: 12%;
+}
 .album-cover{
   width: 100%;
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
@@ -236,9 +240,11 @@ body{
 .album-title{
   padding: 0;
   margin: 0;
+  padding-top: 3%;
   font-family: 'Kaushan Script', cursive;
   font-weight: 400;
   font-size: 30px;
+  text-align: center;
 }
 .booklet-container{
   width: 100%;
@@ -247,7 +253,7 @@ body{
   color: #79643E;
 }
 .booklet-container img{
-  width: 100%;
+  width: 80%;
 }
 .booklet-container h2{
   margin: 0;
@@ -298,21 +304,16 @@ body{
   text-align: center;
 }
 .songbook-panel{
-  display:flex;
+  display:block;
   width:100%;
-  margin-top: 10%;
+  margin: auto;
 }
-.songbook-panel-img{
-  width:20%;
-  margin:2%;
-  display:inline-block;
-}
-.songbook-panel-img img{
-  width:100%;
+.songbook-panel img{
+  margin-left:5%;
+  width:90%;
 }
 .songbook-panel-info{
-  display:inline-block;
-  width:70%;
+  width:100%;
   margin:2%;
 }
 .songbook-title{
@@ -409,5 +410,8 @@ audio{
   }
   .music-partial{
     width: 90%;
+  }
+  .songbook-panel{
+    width: 70%;
   }
 }

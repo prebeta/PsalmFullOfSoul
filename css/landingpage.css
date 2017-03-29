@@ -16,6 +16,31 @@ body{
   background-position:center;
   background-repeat:no-repeat;
 }
+.announce{
+  width:60%;
+  margin-left:20%;
+  margin-top:1%;
+  border-style:double;
+  border-color:#d56c2a;
+}
+.announce h2{
+  color:#FED095;
+  font-size:2em;
+  padding:0;
+  margin:0;
+}
+.announce p{
+  color:#FFFFFF;
+  font-size:1em;
+  padding:0;
+  margin:0;
+}
+.announce p a:visited{
+  color:#90D6B8;
+}
+.announce p a:link{
+  color:#7182F1;
+}
 .button-container{
   position:absolute;
   bottom:30%;
@@ -65,5 +90,17 @@ body{
 @media screen and (max-width: 500px) {
   .button-container p{
     font-size:4vw;
+  }
+  .announce h2{
+    color:#FED095;
+    font-size:1em;
+    padding:0;
+    margin:0;
+  }
+  .announce p{
+    color:#FFFFFF;
+    font-size:0.7em;
+    padding:0;
+    margin:0;
   }
 }

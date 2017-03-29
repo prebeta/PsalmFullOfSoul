@@ -321,6 +321,12 @@ body{
 .pfos-button:active {
   background-color:#774D25;
 }
+a:link {
+  color: #A0CFF7;
+}
+a:visited {
+  color: #F28E62;
+}
 /* switch to hamburger menu */
 @media screen and (max-width: 1000px) {
   .web-nav{
